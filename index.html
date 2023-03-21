@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Os números -3, -5, etc são proporcionais e não pixels
+        p-3                         ==> padding em tudo 
+        bg-primary                  ==> cor de fundo azul
+        text-white                  ==> texto branco
+        d-flex                      ==> display flex para os itens ficarem um ao lado do outro
+        justify-content-start       ==> não precisa pois start é o padrão
+        m-auto                      ==> centralizado no espaço restante
+        align-self-center           ==> com d-flex padrão (row) alinhará na vertical
+        navbar                      ==> indica que é navbar (precisa)
+        navbar-expand-sm            ==> sm para responsividade mobile
+        navbar-dark                 ==> cor escura
+        bg-AzulEscuro               ==> cor específica no style.css
+        container-fluid             ==> ocupa toda a largura
+        container                   ==> centralizado e menor que o fluid
+        mt-5                        ==> margin-top 5
+        row                         ==> linha
+        col-sm-8 e col-sm-4         ==> duas colunas, uma com o dobro da outra
+        rounded                     ==> border-radius (borda arredondada)
+        p-2                         ==> padding 2 em tudo
+        mb-3                        ==> margin-bottom 3
+        bg-CinzaClaro               ==> cor específica no style.css
+        <main>                      ==> boas práticas e melhor para SEO
+        <aside>                     ==> pode ser uma div mas indica lateral
+        nav                         ==> diferente da navbar, ficará ao lado
+        nav-pills                   ==> formato de "pílula", um oval para retangular
+        flex-column                 ==> para ficarem um embaixo do outro
+        text-center                 ==> alinha o texto no centro, igual text-align
+    -->
+
+    <!-- Header / Cabeçalho -->
+    <header class="p-3 bg-primary text-white d-flex justify-content-start">
+      <img class="w-25" src="images/logo_3.png" alt="Logo" />
+      <h3 class="m-auto align-self-center">Modelo de site Bootstrap</h3>
+    </header>
+    <!-- // Header -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-AzulEscuro">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Arquivos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- // Navbar -->
+
+    <!-- Container / Conteúdo Geral -->
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="rounded p-2 mb-3 bg-CinzaClaro">
+            <h2>Título do Conteúdo</h2>
+            <h5>Descrição do Conteúdo</h5>
+            <p>
+              Ipsum minim amet laborum sit pariatur ut occaecat sint excepteur
+              enim commodo id exercitation. Lorem enim reprehenderit
+              reprehenderit minim pariatur esse ad. Pariatur fugiat officia qui
+              ea. Mollit consequat voluptate excepteur eu pariatur ipsum eiusmod
+              ullamco eu reprehenderit ad. Tempor proident dolore amet officia
+              ullamco enim pariatur pariatur tempor est.
+            </p>
+          </div>
+          <div class="rounded p-2 mb-3 bg-CinzaClaro">
+            <h2>Título do Conteúdo</h2>
+            <h5>Descrição do Conteúdo</h5>
+            <p>
+              Ipsum minim amet laborum sit pariatur ut occaecat sint excepteur
+              enim commodo id exercitation. Lorem enim reprehenderit
+              reprehenderit minim pariatur esse ad. Pariatur fugiat officia qui
+              ea. Mollit consequat voluptate excepteur eu pariatur ipsum eiusmod
+              ullamco eu reprehenderit ad. Tempor proident dolore amet officia
+              ullamco enim pariatur pariatur tempor est.
+            </p>
+          </div>
+          <div class="rounded p-2 mb-3 bg-CinzaClaro">
+            <h2>Título do Conteúdo</h2>
+            <h5>Descrição do Conteúdo</h5>
+            <p>
+              Ipsum minim amet laborum sit pariatur ut occaecat sint excepteur
+              enim commodo id exercitation. Lorem enim reprehenderit
+              reprehenderit minim pariatur esse ad. Pariatur fugiat officia qui
+              ea. Mollit consequat voluptate excepteur eu pariatur ipsum eiusmod
+              ullamco eu reprehenderit ad. Tempor proident dolore amet officia
+              ullamco enim pariatur pariatur tempor est.
+            </p>
+          </div>
+          <div class="rounded p-2 mb-3 bg-CinzaClaro">
+            <h2>Título do Conteúdo</h2>
+            <h5>Descrição do Conteúdo</h5>
+            <p>
+              Ipsum minim amet laborum sit pariatur ut occaecat sint excepteur
+              enim commodo id exercitation. Lorem enim reprehenderit
+              reprehenderit minim pariatur esse ad. Pariatur fugiat officia qui
+              ea. Mollit consequat voluptate excepteur eu pariatur ipsum eiusmod
+              ullamco eu reprehenderit ad. Tempor proident dolore amet officia
+              ullamco enim pariatur pariatur tempor est.
+            </p>
+          </div>
+        </div>
+        <aside class="col-sm-4">
+          <h2>Sobre</h2>
+          <h5>Sobre o CFB Cursos</h5>
+          <p>
+            Somos um canal do Youtube voltado para cursos de programação em
+            geral
+          </p>
+          <h3 class="mt-4">Alguns Cursos</h3>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">C++</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">C#</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Javascript</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Python</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">React</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">React Native</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">PHP</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Arduino</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer / Rodapé -->
+    <footer class="mt-5 p-4 bg-dark text-white text-center">
+        <p>CFB Cursos  |  youtube.com/cfbcursos  |  cfbcursos.com.br</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
